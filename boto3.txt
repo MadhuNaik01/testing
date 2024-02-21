@@ -1,0 +1,24 @@
+pip install boto3
+
+s3_ob=boto3.resource('s3')
+
+Cloud Audit Advisor
+IAM Password Should change
+
+-->Basic steps to work with AWS services using boto3
+-->Core concepts of Boto3
+	-resource(high-level object to access AWS service)
+	-client(dictionary key:value,low-level object to access AWS service, manupulation)
+	-meta(object to enter into client object from resource object)
+	-session(stores configuration state & allow you yo create AWS service resources object & client objects)
+		(object to get connect with particular AWS account or IAM user account)
+	-collections(tool to iterate & manipulate groups of resources)
+	-paginators(automatic paging of response-1000 objects)
+	-waiters(way to block until a certain state has been reached)
+---------------------------------------------------------------------------------------
+Two important steps to write python boto3 scripts for 
+AWS Automation or Provisioning
+
+step1: create secession object(what previlages)
+step2: create resource/client object
+step3:
